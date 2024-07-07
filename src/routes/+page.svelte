@@ -1,10 +1,16 @@
 <script lang="ts">
+	import type { PageData } from './$types';
+
 	import { customAlphabet } from 'nanoid';
 	import { nolookalikesSafe } from 'nanoid-dictionary';
 
 	const getNanoId = customAlphabet(nolookalikesSafe, 21);
 
-	console.log(getNanoId())
+	console.log(getNanoId());
+
+	export let data: PageData;
+
+	$: console.log(data.feed);
 </script>
 
 <svelte:head>
@@ -13,11 +19,19 @@
 </svelte:head>
 
 <section>
-	<img
+	<!-- <img
 		alt="Cover of 'When I Sing Mountains Dance' book wth lots of plants around it."
 		src="https://img.coverrrs.com/v1/images/testing/217a3075-61ff-488d-a5fb-3377192da0bf"
 		width="500"
-	/>
+	/> -->
+
+	{#each data.feed as cover}
+		<img
+			alt={cover.title}
+			src="https://img.coverrrs.com/v1/images/testing/{cover.imageId}"
+			width="500"
+		/>
+	{/each}
 </section>
 
 <style lang="scss">
