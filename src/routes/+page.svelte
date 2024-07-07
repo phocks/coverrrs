@@ -1,4 +1,10 @@
 <script lang="ts">
+	import { customAlphabet } from 'nanoid';
+	import { nolookalikesSafe } from 'nanoid-dictionary';
+
+	const getNanoId = customAlphabet(nolookalikesSafe, 21);
+
+	console.log(getNanoId())
 </script>
 
 <svelte:head>
@@ -12,8 +18,6 @@
 		src="https://img.coverrrs.com/v1/images/testing/217a3075-61ff-488d-a5fb-3377192da0bf"
 		width="500"
 	/>
-
-
 </section>
 
 <style lang="scss">

@@ -10,8 +10,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Post {
+model Cover {
   id        Int      @id @default(autoincrement())
+  urlId     String
   title     String
   content   String?
   createdAt DateTime @default(now())
@@ -22,8 +23,9 @@ model Post {
 }
 
 model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
-  posts Post[]
+  id       Int     @id @default(autoincrement())
+  username String
+  email    String  @unique
+  name     String?
+  posts    Cover[]
 }
