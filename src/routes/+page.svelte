@@ -10,6 +10,10 @@
 </svelte:head>
 
 <section>
+	<img
+		alt="Picard oh!"
+		src="https://img.coverrrs.com/v1/images/testing/aba4101e-c365-49d4-8042-ac58afc1c172"
+	/>
 	<!-- <h1>
 		<span class="welcome">
 			<picture>
@@ -37,7 +41,7 @@
 		flex: 0.6;
 	}
 
-	h1 {
+	/* h1 {
 		width: 100%;
 	}
 
@@ -55,5 +59,5 @@
 		height: 100%;
 		top: 0;
 		display: block;
-	}
+	} */
 </style>
