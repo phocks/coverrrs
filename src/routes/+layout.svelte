@@ -1,9 +1,10 @@
 <script>
-	import './styles.css';
+	import '../styles.css';
+	import Header from "$lib/components/Header.svelte"
 </script>
 
 <div class="app">
-	<!-- <Header /> -->
+	<Header />
 
 	<main>
 		<slot />
@@ -16,20 +17,20 @@
 
 <style>
 	.app {
-		display: flex;
+		/* display: flex;
 		flex-direction: column;
-		min-height: 100vh;
+		min-height: 100vh; */
 	}
 
 	main {
-		flex: 1;
+		/* flex: 1;
 		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
+		flex-direction: column; */
+		/* padding-inline: 1rem; */
+		/* width: 100%;
 		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
+		margin: 0 auto; */
+		
 	}
 
 	/* footer {

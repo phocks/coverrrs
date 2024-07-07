@@ -36,16 +36,15 @@
 
 <style lang="scss">
 	section {
-		display: flex;
-		flex-direction: column;
+		// display: flex;
+		// flex-direction: column;
 		// justify-content: center;
-		align-items: center;
-		flex: 1;
+		// align-items: center;
+		// flex: 1;
 	}
 
 	img {
-		border-radius: 32px;
-		max-width: 100%;
-		margin-inline: -16px;
+		// border-radius: 32px;
+		// max-width: 100%;
 	}
 </style>
