@@ -1,6 +1,7 @@
 {
 	"name": "coverrrs",
 	"version": "0.0.1",
+	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -37,10 +38,8 @@
 		"vite": "^5.0.3",
 		"vitest": "^1.2.0"
 	},
-	"type": "module",
 	"dependencies": {
 		"@prisma/client": "^5.16.1",
-		"@unpic/svelte": "^0.0.53",
 		"nanoid": "^5.0.7",
 		"nanoid-dictionary": "^5.0.0-beta.1"
 	}
