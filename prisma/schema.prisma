@@ -15,10 +15,11 @@ model Cover {
   urlId       String
   imageId     String
   title       String
+  author      String?
   description String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
-  published   Boolean  @default(false)
+  isPublished Boolean  @default(false)
   user        User?    @relation(fields: [userId], references: [id])
   userId      Int?
 }
@@ -28,5 +29,6 @@ model User {
   username String
   email    String  @unique
   name     String?
+  isAdmin  Boolean @default(false)
   posts    Cover[]
 }
