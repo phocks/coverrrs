@@ -5,12 +5,13 @@
   import { nolookalikesSafe } from "nanoid-dictionary";
 
   const getNanoId = customAlphabet(nolookalikesSafe, 21);
-
   console.log(getNanoId());
 
+  // --- Constants ---
   const IMG_CDN_BASE = "https://coverrrs-img.global.ssl.fastly.net";
 
-  export let data: PageData;
+  type Props = { data: PageData };
+  let { data }: Props = $props();
 </script>
 
 <svelte:head>
