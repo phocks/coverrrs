@@ -8,6 +8,8 @@
 
   console.log(getNanoId());
 
+  const IMG_CDN_BASE = "https://coverrrs-img.global.ssl.fastly.net";
+
   export let data: PageData;
 </script>
 
@@ -22,7 +24,7 @@
       <div class="cover">
         <img
           alt={cover.title}
-          src="https://img.coverrrs.com/v1/images/coverrrs/{cover.imageId}"
+          src="{IMG_CDN_BASE}/v1/images/coverrrs/{cover.imageId}"
           width="500"
         />
       </div>
@@ -46,13 +48,13 @@
   }
 
   .cover {
-    display: inline-block;
+    // display: inline-block;
 
     img {
       // border-radius: 32px;
-      // max-width: 100%;
-      max-height: 700px;
-      width: auto;
+      max-width: 100%;
+      width: 500px;
+      display: block;
     }
   }
 </style>
